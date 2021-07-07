@@ -157,7 +157,7 @@ body hr {
 }
 
 body section {
-  min-height: 70vh;
+  min-height: 50vh;
   padding: 100px 0;
   position: relative;
   width: 100%;
