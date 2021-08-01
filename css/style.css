@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap");
-
 * {
   font-weight: normal;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
@@ -116,7 +115,7 @@ body button {
   background: #2469ab;
   border: none;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   color: #fff;
   cursor: pointer;
   font-size: 1.15rem;
@@ -139,7 +138,6 @@ body ol li {
 }
 
 @media (max-width: 768px) {
-
   body ul,
   body ol {
     font-size: 1.25rem;
@@ -158,21 +156,21 @@ body hr {
 
 body section {
   min-height: 50vh;
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   width: 100%;
 }
 
 body section.flex {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -215,7 +213,7 @@ body .text-center {
 
 body #mobile-toggler {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   display: none;
   padding: 1.618em;
   width: auto;
@@ -236,9 +234,9 @@ body #mobile-toggler.hamburger {
   transition-property: opacity, filter;
   transition-property: opacity, filter, -webkit-filter;
   -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+          transition-duration: 0.15s;
   -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
+          transition-timing-function: linear;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -297,9 +295,9 @@ body #mobile-toggler.hamburger .hamburger-inner::after {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+          transition-duration: 0.15s;
   -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 body #mobile-toggler.hamburger .hamburger-inner::before,
@@ -318,9 +316,9 @@ body #mobile-toggler.hamburger .hamburger-inner::after {
 
 body #mobile-toggler.hamburger.hamburger--squeeze .hamburger-inner {
   -webkit-transition-duration: 0.075s;
-  transition-duration: 0.075s;
+          transition-duration: 0.075s;
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 body #mobile-toggler.hamburger.hamburger--squeeze .hamburger-inner::before {
@@ -337,11 +335,11 @@ body #mobile-toggler.hamburger.hamburger--squeeze .hamburger-inner::after {
 
 body #mobile-toggler.hamburger.hamburger--squeeze.is-active .hamburger-inner {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition-delay: 0.12s;
-  transition-delay: 0.12s;
+          transition-delay: 0.12s;
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 body #mobile-toggler.hamburger.hamburger--squeeze.is-active .hamburger-inner::before {
@@ -354,7 +352,7 @@ body #mobile-toggler.hamburger.hamburger--squeeze.is-active .hamburger-inner::be
 body #mobile-toggler.hamburger.hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -375,8 +373,8 @@ body #mobile-toggler.hamburger.hamburger--squeeze.is-active .hamburger-inner::af
 
 body nav {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,11 +439,9 @@ body nav #navigation li a:hover:after {
     padding: 0;
     text-align: right;
   }
-
   body nav #navigation li a:after {
     visibility: hidden !important;
   }
-
   body nav #navigation li a:hover {
     color: #333;
   }
@@ -456,15 +452,13 @@ body nav #navigation li a:hover:after {
     font-size: 1.5rem;
     padding: 1.618rem 1.618rem 0 1em;
   }
-
   body nav #navigation li a:hover {
     background: transparent;
   }
-
   body nav #navigation li a:hover:after {
     visibility: visible !important;
     -webkit-animation: linkHover 0.5s forwards 0s ease-in-out;
-    animation: linkHover 0.5s forwards 0s ease-in-out;
+            animation: linkHover 0.5s forwards 0s ease-in-out;
   }
 }
 
@@ -478,21 +472,21 @@ body nav #navigation li a:hover:after {
   body nav #navigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (max-width: 1200px) {
   body nav {
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     background: #2469ab;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     opacity: 0;
     height: 100%;
     pointer-events: none;
@@ -542,15 +536,15 @@ body #hero {
 
 body header {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #2469ab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   overflow: hidden;
   padding: 0 1.618rem;
   position: fixed;
@@ -583,8 +577,8 @@ body header.scrolled a:hover {
 @media (max-width: 1200px) {
   body header {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -610,5 +604,4 @@ body footer .bottom {
   padding: 1.618em 3.36rem;
   text-align: center;
 }
-
 /*# sourceMappingURL=style.css.map */
