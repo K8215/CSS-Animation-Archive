@@ -544,3 +544,90 @@ Loaders
         opacity: 1;
     }
 }
+
+.rainbow {
+    animation: rainbow 2s infinite;
+    color: red;
+    font-size: 2rem;
+    transition: all ease;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    10% {
+        color: orange;
+    }
+
+    20% {
+        color: yellow;
+    }
+
+    30% {
+        color: green;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: indigo;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: green;
+    }
+
+    80% {
+        color: yellow;
+    }
+
+    90% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.dancing-dots {
+    font-size: 2rem;
+    position: relative;
+
+    span {
+        animation: dancingDots 1s infinite;
+        bottom: 0;
+        position: relative;
+        margin: 0 0 0 5px;
+
+        &:nth-of-type(2) {
+            animation-delay: .15s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: .25s;
+        }
+    }
+}
+
+@keyframes dancingDots {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
