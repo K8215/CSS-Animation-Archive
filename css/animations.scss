@@ -525,3 +525,22 @@ Rollovers
 /**********************************************
 Loaders
 **********************************************/
+.lazy {
+    animation: lazy 1s infinite;
+    font-size: 2rem;
+}
+
+@keyframes lazy {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

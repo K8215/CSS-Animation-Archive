@@ -508,4 +508,33 @@ Rollovers
 /**********************************************
 Loaders
 **********************************************/
+.lazy {
+  -webkit-animation: lazy 1s infinite;
+          animation: lazy 1s infinite;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes lazy {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lazy {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=animations.css.map */
