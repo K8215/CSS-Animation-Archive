@@ -201,6 +201,64 @@ Loop
   }
 }
 
+.neon {
+  -webkit-animation: neon 2s infinite;
+          animation: neon 2s infinite;
+  color: #fff;
+  font-family: cursive;
+  font-size: 2rem;
+  font-style: italic;
+  text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+}
+
+@-webkit-keyframes neon {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  3% {
+    text-shadow: 0 0 0px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 30px #2469ab, 0 0 50px #2469ab, 0 0 70px #2469ab, 0 0 90px #2469ab;
+  }
+  6% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  20% {
+    text-shadow: 0 0 0px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 30px #2469ab, 0 0 50px #2469ab, 0 0 70px #2469ab, 0 0 90px #2469ab;
+  }
+  23% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 20px #2469ab, 0 0 30px #2469ab, 0 0 40px #2469ab, 0 0 50px #2469ab;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  3% {
+    text-shadow: 0 0 0px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 30px #2469ab, 0 0 50px #2469ab, 0 0 70px #2469ab, 0 0 90px #2469ab;
+  }
+  6% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  20% {
+    text-shadow: 0 0 0px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 30px #2469ab, 0 0 50px #2469ab, 0 0 70px #2469ab, 0 0 90px #2469ab;
+  }
+  23% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 5px #448fd8, 0 0 10px #448fd8, 0 0 20px #2469ab, 0 0 30px #2469ab, 0 0 40px #2469ab, 0 0 50px #2469ab;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #448fd8, 0 0 20px #448fd8, 0 0 40px #2469ab, 0 0 60px #2469ab, 0 0 80px #2469ab, 0 0 100px #2469ab;
+  }
+}
+
 /**********************************************
 Rollovers
 **********************************************/

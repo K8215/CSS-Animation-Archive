@@ -159,6 +159,101 @@ Loop
     }
 }
 
+.neon {
+    animation: neon 2s infinite;
+    color: $white;
+    font-family: cursive;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow:
+        0 0 5px $white,
+        0 0 10px $light,
+        0 0 20px $light,
+        0 0 40px $dark,
+        0 0 60px $dark,
+        0 0 80px $dark,
+        0 0 100px $dark;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow:
+            0 0 5px $white,
+            0 0 10px $light,
+            0 0 20px $light,
+            0 0 40px $dark,
+            0 0 60px $dark,
+            0 0 80px $dark,
+            0 0 100px $dark;
+    }
+
+    3% {
+        text-shadow:
+            0 0 0px $white,
+            0 0 5px $light,
+            0 0 10px $light,
+            0 0 30px $dark,
+            0 0 50px $dark,
+            0 0 70px $dark,
+            0 0 90px $dark;
+    }
+
+    6% {
+        text-shadow:
+            0 0 5px $white,
+            0 0 10px $light,
+            0 0 20px $light,
+            0 0 40px $dark,
+            0 0 60px $dark,
+            0 0 80px $dark,
+            0 0 100px $dark;
+    }
+
+    20% {
+        text-shadow:
+            0 0 0px $white,
+            0 0 5px $light,
+            0 0 10px $light,
+            0 0 30px $dark,
+            0 0 50px $dark,
+            0 0 70px $dark,
+            0 0 90px $dark;
+    }
+
+    23% {
+        text-shadow:
+            0 0 5px $white,
+            0 0 10px $light,
+            0 0 20px $light,
+            0 0 40px $dark,
+            0 0 60px $dark,
+            0 0 80px $dark,
+            0 0 100px $dark;
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px $white,
+            0 0 5px $light,
+            0 0 10px $light,
+            0 0 20px $dark,
+            0 0 30px $dark,
+            0 0 40px $dark,
+            0 0 50px $dark;
+    }
+
+    100% {
+        text-shadow:
+            0 0 5px $white,
+            0 0 10px $light,
+            0 0 20px $light,
+            0 0 40px $dark,
+            0 0 60px $dark,
+            0 0 80px $dark,
+            0 0 100px $dark;
+    }
+}
+
 /**********************************************
 Rollovers
 **********************************************/
