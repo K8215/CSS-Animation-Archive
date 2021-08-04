@@ -103,6 +103,64 @@ Loop
     }
 }
 
+//Glitch Text
+.glitch-text {
+    animation: glitchText .5s infinite;
+    font-size: 2rem;
+    position: relative;
+}
+
+@keyframes glitchText {
+    0% {
+        text-shadow:
+            .05em 0 0 rgba(255, 0, 0, .75),
+            -.05em -.05em 0 rgba(0, 255, 0, .75),
+            .05em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    14% {
+        text-shadow:
+            .05em 0 0 rgba(255, 0, 0, .75),
+            -.05em -.05em 0 rgba(0, 255, 0, .75),
+            .05em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    15% {
+        text-shadow:
+            -.05em -.05em 0 rgba(255, 0, 0, .75),
+            .05em .05em 0 rgba(0, 255, 0, .75),
+            -.05em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    49% {
+        text-shadow:
+            -.05em -.05em 0 rgba(255, 0, 0, .75),
+            .05em .05em 0 rgba(0, 255, 0, .75),
+            -.05em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    50% {
+        text-shadow:
+            .05em .05em 0 rgba(255, 0, 0, .75),
+            .05em 0 0 rgba(0, 255, 0, .75),
+            .0 -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    99% {
+        text-shadow:
+            .05em .05em 0 rgba(255, 0, 0, .75),
+            .05em 0 0 rgba(0, 255, 0, .75),
+            .0 -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    100% {
+        text-shadow:
+            -.05em 0 0 rgba(255, 0, 0, .75),
+            -.05em -.05em 0 rgba(0, 255, 0, .75),
+            -.05em -.05em 0 rgba(0, 0, 255, .75);
+    }
+}
+
 //Wobble
 .wobble {
     animation: wobble .25s infinite;
@@ -131,6 +189,7 @@ Loop
     }
 }
 
+//Glow
 .glow {
     animation: glow 2s infinite;
     background: $dark;
@@ -159,6 +218,7 @@ Loop
     }
 }
 
+//Neon
 .neon {
     animation: neon 2s infinite;
     color: $white;
@@ -426,6 +486,72 @@ Rollovers
     }
 }
 
+//Ripple
+.ripple {
+    overflow: hidden;
+    position: relative;
+
+    span {
+        z-index: 1;
+    }
+
+    &:before,
+    &:after {
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 0%;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .25s ease-in-out;
+        width: 0%;
+        z-index: 0;
+    }
+
+    &:before {
+        background: $darker;
+    }
+
+    &:after {
+        background: $dark;
+    }
+
+    &:hover {
+        &:before {
+            animation: ripple 1s ease-in-out;
+        }
+
+        &:after {
+            animation: ripple 1s ease-in-out;
+            animation-delay: .15s;
+        }
+    }
+}
+
+@keyframes ripple {
+
+    0% {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
+
+    50% {
+        height: 200%;
+        opacity: 1;
+        width: 200%;
+    }
+
+    100% {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
+}
+
 //Underline
 .underline {
     position: relative;
@@ -525,6 +651,8 @@ Rollovers
 /**********************************************
 Loaders
 **********************************************/
+
+//Lazy
 .lazy {
     animation: lazy 1s infinite;
     font-size: 2rem;
@@ -545,6 +673,7 @@ Loaders
     }
 }
 
+//Rainbow
 .rainbow {
     animation: rainbow 2s infinite;
     color: red;
@@ -598,6 +727,7 @@ Loaders
     }
 }
 
+//Dancing Dots
 .dancing-dots {
     font-size: 2rem;
     position: relative;
@@ -619,6 +749,43 @@ Loaders
 }
 
 @keyframes dancingDots {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+//Dancing Letters
+.dancing-letters {
+    font-size: 2rem;
+
+    span {
+        animation: dancingLetters 1s infinite;
+        bottom: 0;
+        position: relative;
+
+        &:nth-of-type(2) {
+            animation: dancingLetters 1s infinite .25s;
+        }
+
+        &:nth-of-type(3) {
+            animation: dancingLetters 1s infinite .5s;
+        }
+
+        &:nth-of-type(4) {
+            animation: dancingLetters 1s infinite .75s;
+        }
+    }
+}
+
+@keyframes dancingLetters {
     0% {
         bottom: 0;
     }
