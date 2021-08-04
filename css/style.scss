@@ -101,6 +101,10 @@ body {
         padding: 1.25rem 2rem;
         text-transform: uppercase;
         width: 175px;
+
+        @include breakpoint(md) {
+            margin: 0 0 15px;
+        }
     }
 
     ul,
