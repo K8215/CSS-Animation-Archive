@@ -679,8 +679,8 @@ Loaders
   -webkit-animation: rainbow 2s infinite;
           animation: rainbow 2s infinite;
   background-clip: text;
-  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, lime), color-stop(45%, #006aff), color-stop(60%, lime), color-stop(75%, yellow), to(#ff0303));
-  background-image: linear-gradient(90deg, red 0%, yellow 15%, lime 30%, #006aff 45%, lime 60%, yellow 75%, #ff0303 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, lime), color-stop(45%, blue), color-stop(60%, lime), color-stop(75%, yellow), to(#ff0303));
+  background-image: linear-gradient(90deg, red 0%, yellow 15%, lime 30%, blue 45%, lime 60%, yellow 75%, #ff0303 100%);
   color: transparent;
   font-size: 2rem;
   -webkit-transition: all ease;

@@ -677,7 +677,7 @@ Loaders
 .rainbow {
     animation: rainbow 2s infinite;
     background-clip: text;
-    background-image: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 15%, rgba(0, 255, 0, 1) 30%, rgba(0, 106, 255, 1) 45%, rgba(0, 255, 0, 1) 60%, rgba(255, 255, 0, 1) 75%, rgba(255, 3, 3, 1) 100%);
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 15%, rgba(0, 255, 0, 1) 30%, rgba(0, 0, 255, 1) 45%, rgba(0, 255, 0, 1) 60%, rgba(255, 255, 0, 1) 75%, rgba(255, 3, 3, 1) 100%);
     color: transparent;
     font-size: 2rem;
     transition: all ease;
