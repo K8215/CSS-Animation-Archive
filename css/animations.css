@@ -697,8 +697,8 @@ Loaders
     background-image: linear-gradient(90deg, yellow 0%, lime 15%, blue 30%, lime 45%, yellow 60%, #ff0303 75%, yellow 100%);
   }
   30% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, lime), color-stop(45%, yellow), color-stop(60%, red), color-stop(75%, yellow), to(lime));
-    background-image: linear-gradient(90deg, lime 0%, cyan 15%, lime 30%, yellow 45%, red 60%, yellow 75%, lime 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, yellow), color-stop(60%, red), color-stop(75%, yellow), to(lime));
+    background-image: linear-gradient(90deg, lime 0%, cyan 15%, blue 30%, yellow 45%, red 60%, yellow 75%, lime 100%);
   }
   45% {
     background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, lime), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, lime), to(blue));
@@ -728,8 +728,8 @@ Loaders
     background-image: linear-gradient(90deg, yellow 0%, lime 15%, blue 30%, lime 45%, yellow 60%, #ff0303 75%, yellow 100%);
   }
   30% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, lime), color-stop(45%, yellow), color-stop(60%, red), color-stop(75%, yellow), to(lime));
-    background-image: linear-gradient(90deg, lime 0%, cyan 15%, lime 30%, yellow 45%, red 60%, yellow 75%, lime 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, yellow), color-stop(60%, red), color-stop(75%, yellow), to(lime));
+    background-image: linear-gradient(90deg, lime 0%, cyan 15%, blue 30%, yellow 45%, red 60%, yellow 75%, lime 100%);
   }
   45% {
     background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, lime), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, lime), to(blue));
