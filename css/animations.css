@@ -693,8 +693,8 @@ Loaders
     background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   20% {
-    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
-    background-image: linear-gradient(90deg, green 0%, cyan 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, green 0%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   40% {
     background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, green), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, green), to(blue));
@@ -720,8 +720,8 @@ Loaders
     background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   20% {
-    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
-    background-image: linear-gradient(90deg, green 0%, cyan 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, green 0%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   40% {
     background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, green), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, green), to(blue));
