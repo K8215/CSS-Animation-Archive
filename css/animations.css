@@ -682,8 +682,6 @@ Loaders
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2rem;
-  -webkit-transition: all ease;
-  transition: all ease;
 }
 
 @-webkit-keyframes rainbow {
