@@ -676,10 +676,12 @@ Loaders
 }
 
 .rainbow {
-  -webkit-animation: rainbow 1s infinite;
-          animation: rainbow 1s infinite;
+  -webkit-animation: rainbow .5s infinite;
+          animation: rainbow .5s infinite;
   background-clip: text;
   -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, green), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+  background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   color: transparent;
   font-size: 2rem;
 }
