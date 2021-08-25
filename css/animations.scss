@@ -677,7 +677,7 @@ Loaders
 .rainbow {
     animation: rainbow 2s infinite;
     background-clip: text;
-    background-image: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 15%, rgba(0, 255, 0, 1) 30%, rgba(0, 0, 255, 1) 45%, rgba(0, 255, 0, 1) 60%, rgba(255, 255, 0, 1) 75%, rgba(255, 3, 3, 1) 100%);
+    background-image: linear-gradient(90deg, red 0%, yellow 15%, green 30%, blue 45%, green 60%, yellow 75%, red 100%);
     color: transparent;
     font-size: 2rem;
     transition: all ease;
@@ -686,27 +686,27 @@ Loaders
 @keyframes rainbow {
 
     0% {
-        background-image: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 255, 0, 1) 15%, rgba(0, 0, 255, 1) 30%, rgba(0, 255, 0, 1) 45%, rgba(255, 255, 0, 1) 60%, rgba(255, 3, 3, 1) 75%, rgba(255, 255, 0, 1) 100%);
+        background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
     }
 
     20% {
-        background-image: linear-gradient(90deg, rgba(0, 255, 0, 1) 0%, rgba(0, 2556, 255, 1) 15%, rgba(0, 0, 255, 1) 30%, rgba(0, 255, 0, 1) 45%, rgba(255, 255, 0, 1) 60%, rgba(255, 0, 0, 1) 75%, rgba(255, 255, 0, 1) 100%);
+        background-image: linear-gradient(90deg, green 0%, rgba(0, 2556, 255, 1) 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
     }
 
     40% {
-        background-image: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(0, 255, 0, 1) 15%, rgba(255, 255, 0, 1) 30%, rgba(255, 0, 0, 1) 45%, rgba(255, 255, 0, 1) 60%, rgba(0, 255, 0, 1) 75%, rgba(0, 0, 255, 1) 100%);
+        background-image: linear-gradient(90deg, blue 0%, green 15%, yellow 30%, red 45%, yellow 60%, green 75%, blue 100%);
     }
 
     60% {
-        background-image: linear-gradient(90deg, rgba(0, 255, 0, 1) 0%, rgba(255, 255, 0, 1) 15%, rgba(255, 0, 0, 1) 30%, rgba(255, 255, 0, 1) 45%, rgba(0, 255, 0, 1) 60%, rgba(0, 0, 255, 1) 75%, rgba(0, 255, 0, 1) 100%);
+        background-image: linear-gradient(90deg, green 0%, yellow 15%, red 30%, yellow 45%, green 60%, blue 75%, green 100%);
     }
 
     80% {
-        background-image: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 15%, rgba(255, 255, 0, 1) 30%, rgba(0, 255, 0, 1) 45%, rgba(0, 0, 255, 1) 60%, rgba(0, 255, 0, 1) 75%, rgba(255, 255, 0, 1) 100%);
+        background-image: linear-gradient(90deg, yellow 0%, red 15%, yellow 30%, green 45%, blue 60%, green 75%, yellow 100%);
     }
 
     100% {
-        background-image: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 15%, rgba(0, 255, 0, 1) 30%, rgba(0, 0, 255, 1) 45%, rgba(0, 255, 0, 1) 60%, rgba(255, 255, 0, 1) 75%, rgba(255, 0, 0, 1) 100%);
+        background-image: linear-gradient(90deg, red 0%, yellow 15%, green 30%, blue 45%, green 60%, yellow 75%, red 100%);
     }
 
 }

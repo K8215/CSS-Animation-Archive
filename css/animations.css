@@ -679,8 +679,8 @@ Loaders
   -webkit-animation: rainbow 2s infinite;
           animation: rainbow 2s infinite;
   background-clip: text;
-  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, lime), color-stop(45%, blue), color-stop(60%, lime), color-stop(75%, yellow), to(#ff0303));
-  background-image: linear-gradient(90deg, red 0%, yellow 15%, lime 30%, blue 45%, lime 60%, yellow 75%, #ff0303 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, green), color-stop(45%, blue), color-stop(60%, green), color-stop(75%, yellow), to(red));
+  background-image: linear-gradient(90deg, red 0%, yellow 15%, green 30%, blue 45%, green 60%, yellow 75%, red 100%);
   color: transparent;
   font-size: 2rem;
   -webkit-transition: all ease;
@@ -689,55 +689,55 @@ Loaders
 
 @-webkit-keyframes rainbow {
   0% {
-    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, lime), color-stop(30%, blue), color-stop(45%, lime), color-stop(60%, yellow), color-stop(75%, #ff0303), to(yellow));
-    background-image: linear-gradient(90deg, yellow 0%, lime 15%, blue 30%, lime 45%, yellow 60%, #ff0303 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, green), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   20% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, lime), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
-    background-image: linear-gradient(90deg, lime 0%, cyan 15%, blue 30%, lime 45%, yellow 60%, red 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, green 0%, cyan 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   40% {
-    background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, lime), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, lime), to(blue));
-    background-image: linear-gradient(90deg, blue 0%, lime 15%, yellow 30%, red 45%, yellow 60%, lime 75%, blue 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, green), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, green), to(blue));
+    background-image: linear-gradient(90deg, blue 0%, green 15%, yellow 30%, red 45%, yellow 60%, green 75%, blue 100%);
   }
   60% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, yellow), color-stop(30%, red), color-stop(45%, yellow), color-stop(60%, lime), color-stop(75%, blue), to(lime));
-    background-image: linear-gradient(90deg, lime 0%, yellow 15%, red 30%, yellow 45%, lime 60%, blue 75%, lime 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, yellow), color-stop(30%, red), color-stop(45%, yellow), color-stop(60%, green), color-stop(75%, blue), to(green));
+    background-image: linear-gradient(90deg, green 0%, yellow 15%, red 30%, yellow 45%, green 60%, blue 75%, green 100%);
   }
   80% {
-    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, red), color-stop(30%, yellow), color-stop(45%, lime), color-stop(60%, blue), color-stop(75%, lime), to(yellow));
-    background-image: linear-gradient(90deg, yellow 0%, red 15%, yellow 30%, lime 45%, blue 60%, lime 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, red), color-stop(30%, yellow), color-stop(45%, green), color-stop(60%, blue), color-stop(75%, green), to(yellow));
+    background-image: linear-gradient(90deg, yellow 0%, red 15%, yellow 30%, green 45%, blue 60%, green 75%, yellow 100%);
   }
   100% {
-    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, lime), color-stop(45%, blue), color-stop(60%, lime), color-stop(75%, yellow), to(red));
-    background-image: linear-gradient(90deg, red 0%, yellow 15%, lime 30%, blue 45%, lime 60%, yellow 75%, red 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, green), color-stop(45%, blue), color-stop(60%, green), color-stop(75%, yellow), to(red));
+    background-image: linear-gradient(90deg, red 0%, yellow 15%, green 30%, blue 45%, green 60%, yellow 75%, red 100%);
   }
 }
 
 @keyframes rainbow {
   0% {
-    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, lime), color-stop(30%, blue), color-stop(45%, lime), color-stop(60%, yellow), color-stop(75%, #ff0303), to(yellow));
-    background-image: linear-gradient(90deg, yellow 0%, lime 15%, blue 30%, lime 45%, yellow 60%, #ff0303 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, green), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, yellow 0%, green 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   20% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, lime), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
-    background-image: linear-gradient(90deg, lime 0%, cyan 15%, blue 30%, lime 45%, yellow 60%, red 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, cyan), color-stop(30%, blue), color-stop(45%, green), color-stop(60%, yellow), color-stop(75%, red), to(yellow));
+    background-image: linear-gradient(90deg, green 0%, cyan 15%, blue 30%, green 45%, yellow 60%, red 75%, yellow 100%);
   }
   40% {
-    background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, lime), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, lime), to(blue));
-    background-image: linear-gradient(90deg, blue 0%, lime 15%, yellow 30%, red 45%, yellow 60%, lime 75%, blue 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(blue), color-stop(15%, green), color-stop(30%, yellow), color-stop(45%, red), color-stop(60%, yellow), color-stop(75%, green), to(blue));
+    background-image: linear-gradient(90deg, blue 0%, green 15%, yellow 30%, red 45%, yellow 60%, green 75%, blue 100%);
   }
   60% {
-    background-image: -webkit-gradient(linear, left top, right top, from(lime), color-stop(15%, yellow), color-stop(30%, red), color-stop(45%, yellow), color-stop(60%, lime), color-stop(75%, blue), to(lime));
-    background-image: linear-gradient(90deg, lime 0%, yellow 15%, red 30%, yellow 45%, lime 60%, blue 75%, lime 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(15%, yellow), color-stop(30%, red), color-stop(45%, yellow), color-stop(60%, green), color-stop(75%, blue), to(green));
+    background-image: linear-gradient(90deg, green 0%, yellow 15%, red 30%, yellow 45%, green 60%, blue 75%, green 100%);
   }
   80% {
-    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, red), color-stop(30%, yellow), color-stop(45%, lime), color-stop(60%, blue), color-stop(75%, lime), to(yellow));
-    background-image: linear-gradient(90deg, yellow 0%, red 15%, yellow 30%, lime 45%, blue 60%, lime 75%, yellow 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(15%, red), color-stop(30%, yellow), color-stop(45%, green), color-stop(60%, blue), color-stop(75%, green), to(yellow));
+    background-image: linear-gradient(90deg, yellow 0%, red 15%, yellow 30%, green 45%, blue 60%, green 75%, yellow 100%);
   }
   100% {
-    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, lime), color-stop(45%, blue), color-stop(60%, lime), color-stop(75%, yellow), to(red));
-    background-image: linear-gradient(90deg, red 0%, yellow 15%, lime 30%, blue 45%, lime 60%, yellow 75%, red 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(15%, yellow), color-stop(30%, green), color-stop(45%, blue), color-stop(60%, green), color-stop(75%, yellow), to(red));
+    background-image: linear-gradient(90deg, red 0%, yellow 15%, green 30%, blue 45%, green 60%, yellow 75%, red 100%);
   }
 }
 
