@@ -661,6 +661,38 @@ Rollovers
   left: -15px;
 }
 
+.shiver-hover {
+  position: relative;
+  top: 0;
+}
+
+.shiver-hover:hover {
+  -webkit-animation: shiverHover .05s infinite;
+          animation: shiverHover .05s infinite;
+}
+
+@-webkit-keyframes shiverHover {
+  0% {
+    -webkit-transform: translateY(-1px) translateX(-1px);
+            transform: translateY(-1px) translateX(-1px);
+  }
+  100% {
+    -webkit-transform: translateY(1px) translateX(1px);
+            transform: translateY(1px) translateX(1px);
+  }
+}
+
+@keyframes shiverHover {
+  0% {
+    -webkit-transform: translateY(-1px) translateX(-1px);
+            transform: translateY(-1px) translateX(-1px);
+  }
+  100% {
+    -webkit-transform: translateY(1px) translateX(1px);
+            transform: translateY(1px) translateX(1px);
+  }
+}
+
 /**********************************************
 Loaders
 **********************************************/

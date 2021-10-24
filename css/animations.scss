@@ -659,6 +659,25 @@ Rollovers
     }
 }
 
+.shiver-hover {
+    position: relative;
+    top: 0;
+
+    &:hover {
+        animation: shiverHover .05s infinite;
+    }
+}
+
+@keyframes shiverHover {
+    0% {
+        transform: translateY(-1px) translateX(-1px);
+    }
+
+    100% {
+        transform: translateY(1px) translateX(1px);
+    }
+}
+
 /**********************************************
 Loaders
 **********************************************/
