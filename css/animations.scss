@@ -316,24 +316,20 @@ Loop
 
 //Shiver
 .shiver {
-    animation: shiver .1s infinite;
+    animation: shiver .05s infinite;
     position: relative;
     top: 0;
 }
 
 @keyframes shiver {
     0% {
-        transform: translateY(-1px);
-        transform: translateX(-1px);
+        transform: translateY(-1px) translateX(-1px);
     }
 
     100% {
-        transform: translateY(1px);
-        transform: translateX(1px);
+        transform: translateY(1px) translateX(1px);
     }
 }
-
-
 
 /**********************************************
 Rollovers
