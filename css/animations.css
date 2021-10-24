@@ -661,12 +661,12 @@ Rollovers
   left: -15px;
 }
 
-.shiver-hover {
+.shiver-hvr {
   position: relative;
   top: 0;
 }
 
-.shiver-hover:hover {
+.shiver-hvr:hover {
   -webkit-animation: shiverHover .05s infinite;
           animation: shiverHover .05s infinite;
 }
