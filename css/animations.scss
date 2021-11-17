@@ -191,7 +191,7 @@ Loop
 
 //Glow
 .glow {
-    animation: glow 2s infinite;
+    animation: glow 1s infinite alternate;
     background: $dark;
     box-shadow: 0 0 15px 5px $dark;
     text-shadow: 0 0 0px $white;
@@ -199,22 +199,16 @@ Loop
 
 @keyframes glow {
 
-    0% {
+    from {
         background: $dark;
         box-shadow: 0 0 15px 5px $dark;
         text-shadow: 0 0 0px $white;
     }
 
-    50% {
+    to {
         background: $light;
         box-shadow: 0 0 20px 10px $dark;
         text-shadow: 0 0 10px $white;
-    }
-
-    100% {
-        background: $dark;
-        box-shadow: 0 0 15px 5px $dark;
-        text-shadow: 0 0 0 $white;
     }
 }
 
@@ -322,11 +316,11 @@ Loop
 }
 
 @keyframes shiver {
-    0% {
+    from {
         transform: translateY(-1px) translateX(-1px);
     }
 
-    100% {
+    to {
         transform: translateY(1px) translateX(1px);
     }
 }
@@ -550,13 +544,13 @@ Rollovers
 
 @keyframes ripple {
 
-    0% {
+    from {
         height: 0;
         opacity: 0;
         width: 0;
     }
 
-    100% {
+    to {
         height: 200px;
         opacity: 1;
         width: 200px;
@@ -670,11 +664,11 @@ Rollovers
 }
 
 @keyframes shiverHover {
-    0% {
+    from {
         transform: translateY(-1px) translateX(-1px);
     }
 
-    100% {
+    to {
         transform: translateY(1px) translateX(1px);
     }
 }
@@ -749,7 +743,7 @@ Loaders
     position: relative;
 
     span {
-        animation: dancingDots 1s infinite;
+        animation: dancingDots .5s infinite alternate;
         bottom: 0;
         position: relative;
         margin: 0 0 0 5px;
@@ -765,16 +759,12 @@ Loaders
 }
 
 @keyframes dancingDots {
-    0% {
+    from {
         bottom: 0;
     }
 
-    50% {
+    to {
         bottom: 10px;
-    }
-
-    100% {
-        bottom: 0;
     }
 }
 
@@ -783,34 +773,168 @@ Loaders
     font-size: 2rem;
 
     span {
-        animation: dancingLetters 1s infinite;
+        animation: dancingLetters .5s infinite alternate;
         bottom: 0;
         position: relative;
 
         &:nth-of-type(2) {
-            animation: dancingLetters 1s infinite .25s;
+            animation-delay: .25s;
         }
 
         &:nth-of-type(3) {
-            animation: dancingLetters 1s infinite .5s;
+            animation-delay: .5s;
         }
 
         &:nth-of-type(4) {
-            animation: dancingLetters 1s infinite .75s;
+            animation-delay: .75s;
         }
     }
 }
 
 @keyframes dancingLetters {
-    0% {
+    from {
         bottom: 0;
+    }
+
+    to {
+        bottom: 10px;
+    }
+}
+
+//Standard Spinner
+.standard-spinner {
+    height: 75px;
+    position: relative;
+    width: 75px;
+
+    div {
+        animation: standardSpinner 1s linear infinite;
+        border: 10px solid $dark;
+        border-top-color: $darker;
+        border-radius: 50%;
+        box-sizing: border-box;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@keyframes standardSpinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+//Pulsing Spinner
+.pulsing-spinner {
+    height: 75px;
+    position: relative;
+    width: 75px;
+
+    div {
+        animation: pulsingSpinner 1s linear infinite;
+        border: 10px solid transparent;
+        border-top-color: $dark;
+        border-radius: 50%;
+        box-sizing: border-box;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    div:nth-child(2) {
+        border: 10px solid transparent;
+        border-bottom-color: $dark;
+    }
+}
+
+@keyframes pulsingSpinner {
+    0% {
+        transform: rotate(0deg);
+        border-width: 10px;
     }
 
     50% {
-        bottom: 10px;
+        transform: rotate(180deg);
+        border-width: 1px;
     }
 
     100% {
-        bottom: 0;
+        transform: rotate(360deg);
+        border-width: 10px;
     }
 }
+
+//Bouncing Ball 
+.bouncing-ball {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+
+    div {
+        animation: bouncingBall .5s ease infinite alternate;
+        background: $dark;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@keyframes bouncingBall {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+//Flippers
+.flipper {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+
+    div {
+        animation: flipper 2s linear infinite;
+        background: $dark;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+@keyframes flipper {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    25% {
+        transform: rotateX(0) rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateX(180deg) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(0) rotateY(0);
+    }
+}
+
+//Spinning Balls
+.spinning-balls {}
