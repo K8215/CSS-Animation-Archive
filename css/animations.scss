@@ -803,20 +803,13 @@ Loaders
 
 //Standard Spinner
 .standard-spinner {
+    animation: standardSpinner 1s linear infinite;
+    border: 10px solid $dark;
+    border-top-color: $darker;
+    border-radius: 50%;
+    box-sizing: border-box;
     height: 75px;
-    position: relative;
     width: 75px;
-
-    div {
-        animation: standardSpinner 1s linear infinite;
-        border: 10px solid $dark;
-        border-top-color: $darker;
-        border-radius: 50%;
-        box-sizing: border-box;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
 }
 
 @keyframes standardSpinner {
@@ -896,22 +889,12 @@ Loaders
     }
 }
 
-//Flippers
+//Flipper
 .flipper {
+    animation: flipper 2s linear infinite;
     display: flex;
-    height: 100px;
     justify-content: center;
     position: relative;
-    width: 100px;
-
-    div {
-        animation: flipper 2s linear infinite;
-        background: $dark;
-        height: 50px;
-        position: absolute;
-        top: 0;
-        width: 50%;
-    }
 }
 
 @keyframes flipper {

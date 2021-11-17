@@ -865,12 +865,6 @@ Loaders
 }
 
 .standard-spinner {
-  height: 75px;
-  position: relative;
-  width: 75px;
-}
-
-.standard-spinner div {
   -webkit-animation: standardSpinner 1s linear infinite;
           animation: standardSpinner 1s linear infinite;
   border: 10px solid #2469ab;
@@ -878,9 +872,8 @@ Loaders
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100%;
-  position: absolute;
-  width: 100%;
+  height: 75px;
+  width: 75px;
 }
 
 @-webkit-keyframes standardSpinner {
@@ -1011,25 +1004,15 @@ Loaders
 }
 
 .flipper {
+  -webkit-animation: flipper 2s linear infinite;
+          animation: flipper 2s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100px;
-}
-
-.flipper div {
-  -webkit-animation: flipper 2s linear infinite;
-          animation: flipper 2s linear infinite;
-  background: #2469ab;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  width: 50%;
 }
 
 @-webkit-keyframes flipper {
